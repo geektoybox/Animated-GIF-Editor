@@ -164,7 +164,7 @@ class MainWindow(QMainWindow):
             self.act_settings.setShortcut("Meta+,")
         self.act_settings.triggered.connect(self.open_settings)
 
-        self.act_about = QAction("About Geek's Animated GIF Editor", self)
+        self.act_about = QAction("About", self)
         self.act_about.triggered.connect(self.open_about)
 
         self.act_quit = QAction("Quit", self)

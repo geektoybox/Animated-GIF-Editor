@@ -1,12 +1,12 @@
 {
   "theme": "system",
-  "thumb_size": 64,
+  "thumb_size": 25,
   "remember_add_dir": true,
   "remember_open_dir": true,
   "remember_save_dir": true,
   "remember_export_dir": true,
   "remember_geometry": true,
-  "last_add_dir": "",
+  "last_add_dir": "/Users/domdominici/Documents/00 3DPOC Stuff",
   "last_open_dir": "/Users/domdominici/Desktop/Animated GIFs",
   "last_save_dir": "",
   "last_export_dir": ""
