@@ -182,14 +182,17 @@ class MainWindow(QMainWindow):
         file_menu.addSeparator()
         file_menu.addAction(self.act_quit)
 
-        edit_menu = menubar.addMenu("&Edit")
+        edit_menu = menubar.addMenu("&Tools")
         edit_menu.addAction(self.act_settings)
 
-        help_menu = menubar.addMenu("&Help")
+        help_menu = menubar.addMenu("&About")
         help_menu.addAction(self.act_about)
 
         tb = QToolBar("Main Toolbar", self)
+        tb.setObjectName("MainToolbar")
         tb.setIconSize(QSize(20, 20))
+        tb.setMovable(False)     # Prevent dragging
+        tb.setFloatable(False)   # Prevent detaching
         self.addToolBar(tb)
 
         tb.addAction(self.act_new)
@@ -198,6 +201,7 @@ class MainWindow(QMainWindow):
         tb.addAction(self.act_save_as)
         tb.addSeparator()
         tb.addAction(self.act_settings)
+        tb.addSeparator()
         tb.addAction(self.act_about)
 
     def wire_signals(self) -> None:
